@@ -1122,10 +1122,10 @@ table.dataTable thead > tr > td.sorting {
 
 .header {
 	background: #ff9b44;
-	background: -moz-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: -webkit-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: -ms-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+	background: -moz-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: -webkit-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: -ms-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: linear-gradient(to right, #ff9b44 0%, #4169E1 100%);
 	border-bottom: 1px solid transparent;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 	height: 60px;
@@ -1682,10 +1682,10 @@ table.dataTable thead > tr > td.sorting {
 }
 .account-box .account-btn {
 	background: #ff9b44;
-	background: -moz-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: -webkit-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: -ms-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+	background: -moz-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: -webkit-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: -ms-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: linear-gradient(to right, #ff9b44 0%, #4169E1 100%);
 	border: 0;
     border-radius: 4px;
     display: block;
@@ -5380,10 +5380,10 @@ table.table-inbox tbody tr.checked {
 
 .apply-btn {
 	background: #ff9b44;
-	background: -moz-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: -webkit-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: -ms-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
-	background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+	background: -moz-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: -webkit-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: -ms-linear-gradient(left, #ff9b44 0%, #4169E1 100%);
+	background: linear-gradient(to right, #ff9b44 0%, #4169E1 100%);
 	border-color: transparent;
 	box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
 	color: #fff;

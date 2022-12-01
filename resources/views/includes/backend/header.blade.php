@@ -19,7 +19,7 @@
     
     <!-- Header Title -->
     <div class="page-title-box">
-        <h3>{{ucwords(app(App\Settings\CompanySettings::class)->company_name ?? 'Smart HR')}}</h3>
+        <h3>{{ucwords(app(App\Settings\CompanySettings::class)->company_name ?? 'Travelstar HRM')}}</h3>
     </div>
     <!-- /Header Title -->
     

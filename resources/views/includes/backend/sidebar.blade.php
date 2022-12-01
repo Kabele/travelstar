@@ -9,13 +9,13 @@
                 <li class="{{ route_is('dashboard') ? 'active' : '' }}">
                     <a href="{{route('dashboard')}}"><i class="la la-dashboard"></i> <span> Dashboard</span></a>
                 </li>
-                <li class="submenu">
+                <!-- <li class="submenu">
                     <a href="#"><i class="la la-cube"></i> <span> Apps</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         
                         <li><a class="{{ route_is('contacts') ? 'active' : '' }}" href="{{route('contacts')}}">Contacts</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="menu-title">
                     <span>Employees</span>
                 </li>
@@ -37,14 +37,14 @@
                     <a href="{{route('clients')}}"><i class="la la-users"></i> <span>Clients</span></a>
                 </li>
 
-                <li class="submenu">
+                <!-- <li class="submenu">
                     <a href="#"><i class="la la-rocket"></i> <span> Projects </span> <span class="menu-arrow"></span></a>
                     <ul style="display: non;">
                         <li>
                             <a class="{{ route_is(['projects','project-list']) ? 'active' : '' }}" href="{{route('projects')}}">Projects</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 
                 <li class="{{route_is('leads') ? 'active' : '' }}"> 
                     <a href="{{route('leads')}}"><i class="la la-user-secret"></i> <span>Leads</span></a>
