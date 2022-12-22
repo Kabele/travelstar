@@ -76,6 +76,7 @@ return array(
     'App\\Models\\Policy' => $baseDir . '/app/Models/Policy.php',
     'App\\Models\\Project' => $baseDir . '/app/Models/Project.php',
     'App\\Models\\ProvidentFund' => $baseDir . '/app/Models/ProvidentFund.php',
+    'App\\Models\\State' => $baseDir . '/app/Models/State.php',
     'App\\Models\\Tax' => $baseDir . '/app/Models/Tax.php',
     'App\\Models\\Ticket' => $baseDir . '/app/Models/Ticket.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',

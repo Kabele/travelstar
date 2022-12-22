@@ -37,7 +37,7 @@
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a data-id="{{$employee->id}}" data-firstname="{{$employee->firstname}}" data-lastname="{{$employee->lastname}}" data-email="{{$employee->email}}" data-phone="{{$employee->phone}}" data-avatar="{{$employee->avatar}}" data-company="{{$employee->company}}" data-designation="{{$employee->designation->id}}" data-department="{{$employee->department->id}}" class="dropdown-item editbtn" href="javascript:void(0)" data-toggle="modal"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+						<a data-id="{{$employee->id}}" data-firstname="{{$employee->firstname}}" data-lastname="{{$employee->lastname}}" data-email="{{$employee->email}}" data-phone="{{$employee->phone}}" data-avatar="{{$employee->avatar}}" data-joindate="{{$employee->joindate}}" data-department="{{$employee->department}}" data-designation="{{$employee->designation}}" data-maritalstatus="{{$employee->maritalstatus}}" data-state="{{$employee->state}}" data-lga="{{$employee->lga}}" data-religion="{{$employee->religion}}" data-level="{{$employee->level}}" data-officialphone="{{$employee->officialphone}}" class="dropdown-item editbtn" href="javascript:void(0)" data-toggle="modal"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 						<a data-id="{{$employee->id}}" class="dropdown-item deletebtn" href="javascript:void(0)" data-toggle="modal" ><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 					</div>
 					</div>
@@ -96,13 +96,27 @@
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group">
-								<label class="col-form-label">Company</label>
-								<input type="text" class="form-control" name="company">
+								<label class="col-form-label">Date of Birth</label>
+								<input type="date" class="form-control" name="DOB">
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-form-label">Employee Picture<span class="text-danger">*</span></label>
+								<input class="form-control floating" name="avatar" type="file">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label>Department <span class="text-danger">*</span></label>
+								<label class="col-form-label">Join Date</label>
+								<input type="date" class="form-control" name="joindate">
+							</div>
+						</div>
+					
+					<div class="col-md-6">
+							<div class="form-group">
+								<label>Department<span class="text-danger">*</span></label>
 								<select name="department" class="select">
 									<option>Select Department</option>
 									@foreach ($departments as $department)
@@ -117,19 +131,35 @@
 								<select name="designation" class="select">
 									<option>Select Designation</option>
 									@foreach ($designations as $designation)
-										<option value="{{$designation->id}}">{{$designation->name}}</option>
+										<option value="{{$designation->department_id}}">{{$designation->name}}</option>
 									@endforeach
 								</select>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="col-form-label">Employee Picture<span class="text-danger">*</span></label>
-								<input class="form-control floating" name="avatar" type="file">
+								<label>Marital Status <span class="text-danger">*</span></label>
+								<select name="maritalstatus" class="select">
+									<option value="Single">Single</option>
+									<option value="Married">Married</option>
+									<option value="Divorced">Divorced</option>
+									<option value="Engaged">Engaged</option>
+									<option value="Widow/widower">Widow/Widower</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>State <span class="text-danger">*</span></label>
+								<select name="state" class="select">
+									<option>Select State</option>
+									@foreach ($states as $state)
+										<option value="{{$state->state_id}}">{{$state->name}}</option>
+									@endforeach
+								</select>
 							</div>
 						</div>
 					</div>
-					
 					<div class="submit-section">
 						<button class="btn btn-primary submit-btn">Submit</button>
 					</div>
@@ -241,6 +271,7 @@
 			var phone = $(this).data('phone');
 			var avatar = $(this).data('avatar');
 			var company = $(this).data('company');
+			var joindate = $(this).data('joindate');
 			var designation = $(this).data('designation');
 			var department = $(this).data('department');
 			$('#edit_id').val(id);
@@ -249,6 +280,7 @@
 			$('.edit_email').val(email);
 			$('.edit_phone').val(phone);
 			$('.edit_company').val(company);
+			$('.edit_joindate').val(joindate);
 			$('.edit_designation').val(designation);
 			$('#edit_department').val(department).attr('selected');
 			$('.edit_avatar').attr('src',avatar);

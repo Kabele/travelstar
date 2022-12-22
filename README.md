@@ -1,7 +1,3 @@
-![Issues](https://img.shields.io/github/issues/MusheAbdulHakim/Laravel-Smarthr)
-![Forks](https://img.shields.io/github/forks/MusheAbdulHakim/Laravel-Smarthr)
-![Stars](https://img.shields.io/github/stars/MusheAbdulHakim/Laravel-Smarthr)
-
 # Features
 - Admin Backend
 	1. Contact App
@@ -27,16 +23,19 @@
 # Installation
  Follow these steps to install the application.
 
-1. Clone the Repository
+1. Upload Zip folder to github repository.
+
+
+2. Clone the Repository
 
 ```
-git clone https://github.com/MusheAbdulHakim/Laravel-Smarthr.git
+git clone ...
 
 ```
 2. Go to project directory
 
 ```
-cd Laravel-Smarthr
+cd Travelstar
 
 ```
 
@@ -46,7 +45,6 @@ cd Laravel-Smarthr
 composer install
 
 ```
-
 
 4. Create your database 
 
@@ -68,31 +66,19 @@ php artisan key:generate
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=smarthr
+DB_DATABASE=hrm
 DB_USERNAME=root
 DB_PASSWORD=
 
 ```
-8. Import smarthr.sql file in the database folder, or run migrations
+8. Run migrations
 Use this command to run migrations and seeders
 
 ```
 php artisan migrate --seed
 
 ```
-9. Start the local server and browser to your app.
-This command will start the development server
-```
-php artisan serve
-
-```
-
-10. Open the address in the terminal in your browser.Usually address is usually like this:
-```
-http://127.0.0.1:8000
-
-```
-11. Enjoy and make sure to star the repo :).Report bugs,features and also send your pull requests I will be happy to merge them.
+11. Enjoy and make sure to report errors
 
 # admin login credentials
 
@@ -101,12 +87,6 @@ http://127.0.0.1:8000
  password: admin
 ```
 
-#screenshots
-
-![ScreenShot](screenshots/login.png?raw=true "Login page")
-![Dashboard](screenshots/dashboard.png?raw=true "Dashbaord page")
-![Dashboard](screenshots/clients.png?raw=true "Clients page")
-![Dashboard](screenshots/employees.png?raw=true "employees page")
 
 # Theme
  https://themeforest.net/item/smarthr-bootstrap-admin-panel-template/21153150

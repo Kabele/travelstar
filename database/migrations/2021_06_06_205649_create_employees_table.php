@@ -21,7 +21,14 @@ class CreateEmployeesTable extends Migration
             $table->string('phone')->nullable();
             $table->foreignId('department_id')->nullable()->constrained();
             $table->foreignId('designation_id')->nullable()->constrained();
-            $table->string('company')->nullable();
+            $table->date('DOB');
+            $table->date('joindate');
+            $table->string('maritalstatus');
+            $table->foreignId('state_id')->nullable()->constrained();
+            $table->foreignId('lga_id')->nullable()->constrained();
+            $table->string('religion');
+            $table->string('level');
+            $table->string('officialphone');
             $table->string('avatar')->nullable();
             $table->softDeletes();
             $table->timestamps();
