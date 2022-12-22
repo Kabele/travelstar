@@ -27,7 +27,7 @@ class EmployeeController extends Controller
         $lgas = Lga::get();
         $employees = Employee::with('department','designation','state','lga')->get();
         return view('backend.employees',
-        compact('title','designations','departments','states', 'lgas' ,'employees'));
+        compact('title','designations','departments','states', 'lga' ,'employees'));
     }
 
     /**
@@ -40,9 +40,11 @@ class EmployeeController extends Controller
        $title="employees";
        $designations = Designation::get();
        $departments = Department::get();
+       $states = State::get();
+       $lgas = Lga::get();
        $employees = Employee::with('department','designation')->get();
        return view('backend.employees-list',
-       compact('title','designations','departments','employees'));
+       compact('title','designations','departments', 'states','lga' ,'employees'));
    }
 
     /**
